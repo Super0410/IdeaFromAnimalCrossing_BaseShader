@@ -477,7 +477,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a58a614af9aa7b48b8695bed1f29480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTrans: {fileID: 1126505045}
 --- !u!1 &676522945
 GameObject:
   m_ObjectHideFlags: 0
@@ -1321,6 +1320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34b88bcc1c3d1b9489048c8d5af96e46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rollType: 1
   playerTrans: {fileID: 1126505045}
   rollStrength: 0.005
 --- !u!1 &2068998321

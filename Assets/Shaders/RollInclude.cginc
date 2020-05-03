@@ -14,8 +14,11 @@ inline float4 GetXZRollDist(float3 worldPos)
 
 inline float4 GetFixedRollClipPos(float4 objVertex) {
     float3 worldPos = mul(unity_ObjectToWorld, objVertex);
-    //float dist2Player = GetZRollDist(worldPos);
+#ifdef GroundRollOnlyZ
+    float dist2Player = GetZRollDist(worldPos);
+#else
     float dist2Player = GetXZRollDist(worldPos);
+#endif
     worldPos.y -= dist2Player * _RollStrength;
 
     return mul(UNITY_MATRIX_VP, float4(worldPos, 1));

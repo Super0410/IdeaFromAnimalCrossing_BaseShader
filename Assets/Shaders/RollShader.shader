@@ -16,9 +16,10 @@
             #pragma vertex vert
             #pragma fragment frag
             #pragma multi_compile_fog
+            #pragma shader_feature GroundRollOnlyZ
+            #include "RollInclude.cginc"
 
             #include "UnityCG.cginc"
-            #include "RollInclude.cginc"
 
             struct appdata
             {
